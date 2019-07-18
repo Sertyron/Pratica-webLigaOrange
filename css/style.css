@@ -9,6 +9,9 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin: auto;
 
 }
 
@@ -21,13 +24,87 @@
 .fotoRivales{
   position: relative;
   width: 100%;
-  background-image:url("src/fotoVS.png");
+  background-image:url("../src/vs2.png");
+  background-size: contain;
   z-index: -1;
   margin: 60px 0px;
 }
 
 .logoEvento{
   display: flex;
-
+  margin: auto;
   width: 400px;
+  z-index: 1;
+  mix-blend-mode: normal;
+}
+
+.fotoRivales::before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: url( ../src/fotoVS.png) center;
+  background-size: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+  }
+/* color de reloj */
+
+.reloj{
+  margin: auto;
+  background: #FF005B;
+  width: 800px;
+  height: 250px;
+
+}
+
+p{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.diasQueFaltan{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.letras{
+    font-size: 40px;
+    margin: 0 22px;
+}
+
+/* Equipos */
+
+.participantes{
+  margin: auto;
+  margin-top: 50px;
+}
+
+.participantes h2{
+  font-size:40px;
+  font-weight: bold;
+}
+
+/* lista de equipos */
+
+
+div ul{
+  position: relative;
+  display: flex;
+
+ }
+
+div li{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
 }
