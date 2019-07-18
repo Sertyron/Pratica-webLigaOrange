@@ -23,19 +23,14 @@
 
 .fotoRivales{
   position: relative;
-  width: 100%;
-  background-image:url("../src/vs2.png");
-  background-size: contain;
-  z-index: -1;
-  margin: 60px 0px;
-}
-
-.logoEvento{
   display: flex;
-  margin: auto;
-  width: 400px;
-  z-index: 1;
-  mix-blend-mode: normal;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url("../src/vs2.png");
+  background-size: cover;
+  background-position: center;
+  margin: 60px 0px;
 }
 
 .fotoRivales::before{
@@ -49,15 +44,20 @@
   background-size: cover;
   mix-blend-mode: multiply;
   opacity: 0.7;
-  }
+}
 /* color de reloj */
+
+.logoEvento{
+  position: relative;
+  display: flex;
+  height: 360px;
+}
 
 .reloj{
   margin: auto;
   background: #FF005B;
   width: 800px;
   height: 250px;
-
 }
 
 p{
