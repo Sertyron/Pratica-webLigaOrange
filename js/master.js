@@ -63,10 +63,10 @@ const horaLimite= (deadline , elem , finalMessage) =>{
           titulo_h2.setAttribute("id","titulo");
 
           let parrafo_p=document.createElement("p");
-          titulo_h2.setAttribute("id","texto");
+          parrafo_p.setAttribute("id","texto");
 
           let jugadores_img=document.createElement("img");
-          titulo_h2.setAttribute("id","jugador");
+          jugadores_img.setAttribute("id","jugador");
           marco.appendChild(titulo_h2);
           marco.appendChild(parrafo_p);
           marco.appendChild(jugadores_img);
@@ -76,13 +76,13 @@ const horaLimite= (deadline , elem , finalMessage) =>{
         crearEtiquetas();
 
         function buscarEquipos(n){
-          let info=datos[n];
+          let elementos=datos[n];
           let tituloDOM = document.getElementById("titulo");
-          tituloDOM.innerHTML = info.titulo;
+          tituloDOM.innerHTML = elementos.titulo;
           let textoDOM = document.getElementById("texto");
-          textoDOM.innerHTML = info.texto;
+          textoDOM.innerHTML = elementos.texto;
           let imagenDOM = document.getElementById("jugador");
-          imagenDOM.src = info.jugadores;
+          imagenDOM.src = elementos.jugadores;
 
         };
 
@@ -100,3 +100,5 @@ const horaLimite= (deadline , elem , finalMessage) =>{
           claseSumar[i].addEventListener('click', cargaInfo , false);
 
         };
+
+        cargaInfo();
