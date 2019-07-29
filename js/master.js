@@ -87,3 +87,16 @@ const horaLimite= (deadline , elem , finalMessage) =>{
         };
 
         buscarEquipos();
+
+        //carga la info del equipo segun el numero del array
+
+        function cargaInfo(){
+            let numeroDeEquipo=this.getAttribute("data-numero");
+
+        };
+          var claseSumar= document.getElementByClassName("link-equipo");
+
+        for(var i=0;i < claseSumar.length; i++){
+          claseSumar[i].addEventListener('click', cargaInfo , false);
+
+        };
