@@ -43,7 +43,7 @@ const horaLimite= (deadline , elem , finalMessage) =>{
   datos=[
     { titulo:"EMK",
       texto:"eMonkeyz nació en noviembre de 2015 de la fusión de Celerius e-Sports , club con una larga historia en la escena nacional, y Bananized , grupo de profesionales con amplia experiencia en el sector de los deportes.",
-      jugadores:"../src/Jugadores/220px-EMK_DuaLL_2019_Split_2.png"
+      jugadores:"../WebRivals/src/Jugadores/Monkey/220px-EMK_DuaLL_2019_Split_2.png"
     },
     /*{ titulo:"EMK",
       texto:"eMonkeyz nació en noviembre de 2015 de la fusión de Celerius e-Sports , club con una larga historia en la escena nacional, y Bananized , grupo de profesionales con amplia experiencia en el sector de los deportes.",
@@ -75,7 +75,7 @@ const horaLimite= (deadline , elem , finalMessage) =>{
 
         crearEtiquetas();
 
-        function buscarEquipos(n){
+        function buscarEquipos(n=0){
           let elementos=datos[n];
           let tituloDOM = document.getElementById("titulo");
           tituloDOM.innerHTML = elementos.titulo;
@@ -90,7 +90,7 @@ const horaLimite= (deadline , elem , finalMessage) =>{
 
         //carga la info del equipo segun el numero del array
 
-        function cargaInfo(){
+        /*function cargaInfo(){
             let numeroDeEquipo=this.getAttribute("data-numero");
 
         };
@@ -101,4 +101,4 @@ const horaLimite= (deadline , elem , finalMessage) =>{
 
         };
 
-        cargaInfo();
+        cargaInfo();*/
