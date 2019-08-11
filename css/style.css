@@ -108,3 +108,69 @@ div li{
   flex-wrap: wrap;
   padding: 10px;
 }
+
+.participantes{
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.participantes h2{
+  font-size:40px;
+  font-weight: bold;
+}
+
+/* lista de equipos */
+
+
+div ul{
+  position: relative;
+  display: flex;
+
+ }
+
+div li{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+/* texto de marco */
+div #marco{
+  display: flex;
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  flex-wrap: wrap;
+  flex-direction:row;
+}
+
+.columna{
+  position:relative;
+  padding: 10px
+}
+#titulo{
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 55px
+}
+
+#texto {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  color: black;
+  font-size: 16px;
+  width: 200px;
+}
+
+#jugador{
+  margin: auto;
+  position: relative;
+}
