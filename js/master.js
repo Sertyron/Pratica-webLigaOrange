@@ -35,7 +35,7 @@ const horaLimite= (deadline , elem , finalMessage) =>{
     }, 1000)
 };
 
-  horaLimite('Mon Sep 25 2019 19:12:04 GMT-0300' , "clock", "Empieza el evento")
+  horaLimite('Sep 25 2022 19:12:04 GMT-0300' , "clock", "Empieza el evento")
 
 // hacer el marco interactivo
 
